@@ -13,14 +13,14 @@
     ></script>
   </head>
   <body>
-    <section>
+    <section id="landing">
       <div class="nav__img">
         <nav>
           <div class="personal__logo">
             <i class="fas fa-film gold"></i>
           </div>
           <ul class="nav__list">
-            <li><a href="#" class="nav__link gold">Home</a></li>
+            <li><a href="#landing" class="nav__link gold">Home</a></li>
             <li><a href="#" class="nav__link gold">Popular</a></li>
             <li><a href="#" class="nav__link gold">Contact</a></li>
           </ul>
@@ -28,7 +28,7 @@
       </div>
       <header>
         <div class="container">
-          <div class="row">
+          <div class="row row--header">
             <h1 class="header__title gold">
               America's Best Movie Site of 2022
             </h1>
@@ -36,11 +36,18 @@
               Streaming high quality movies for your viewing pleasure
             </h2>
             <div class="input__wrap">
-              <input type="text" placeholder="Search by Movie Title" />
+              <input type="text" placeholder="Search by Movie Title" onchange="onSearchChange(event)"/>
+              <i class="fas fa-search gold"></i>
             </div>
+            <div class="movie__filters">
+            <h2 class="movie__search">Search Results:</h2>
+          </div>
             <div class="movie__list">
                 <div class="movie">
-                    
+                    <figure class="movie__img--wrap">
+                      <img src="./assets/ON-CE927_moviet_B1280_20170714200426.jpg" class="movie__img">
+                    </figure>
+                    <p class="movie__title">Movie title</p>
                 </div>
             </div>
           </div>
