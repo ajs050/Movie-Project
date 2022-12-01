@@ -129,6 +129,7 @@ MOVIE
     max-height: 380px;
     width: 25%;
     padding: 12px;
+    margin: 24px;
 }
 .movie__list {
     display: flex;
