@@ -2,6 +2,11 @@ const movieList = document.querySelector(".movie__list")
 const results = document.querySelector(".movie__search")
 
 
+
+function loadingMovies(event) {
+  event.pr
+}
+
 async function onSearchChange(event) {
     const title = event.target.value
     const users = await fetch(`http://www.omdbapi.com/?apikey=d5e9a71c&s=${title}`)
@@ -14,12 +19,15 @@ async function onSearchChange(event) {
 function userHTML(movie) {
   return `<div class="movie">
   <figure class="movie__img--wrap">
-    <img src="${movie.Poster}"> 
+    <img src="${movie.Poster}" class="movie__img"> 
   </figure> 
-  <p class="movie__title">${movie.Title}</p>
+  <p class="movie__title gold">${movie.Title}</p>
 </div>`
 }
 
 function result(title) {
-  results.innerHTML = `Search Results For ${title}`
+  results.innerHTML = `Search Results For <span class="capitalized gold">${title}</span>`
 }
+setTimeout(() => {
+
+},1000)
