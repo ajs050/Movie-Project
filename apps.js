@@ -2,11 +2,6 @@ const movieList = document.querySelector(".movie__list")
 const results = document.querySelector(".movie__search")
 
 
-
-function loadingMovies(event) {
-  event.pr
-}
-
 async function onSearchChange(event) {
     const title = event.target.value
     const users = await fetch(`http://www.omdbapi.com/?apikey=d5e9a71c&s=${title}`)
