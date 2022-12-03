@@ -23,6 +23,3 @@ function userHTML(movie) {
 function result(title) {
   results.innerHTML = `Search Results For <span class="capitalized gold">${title}</span>`
 }
-setTimeout(() => {
-
-},1000)
