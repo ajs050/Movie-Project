@@ -4,7 +4,7 @@ const results = document.querySelector(".movie__search")
 
 async function onSearchChange(event) {
     const title = event.target.value
-    const users = await fetch(`http://www.omdbapi.com/?apikey=d5e9a71c&s=${title}`)
+    const users = await fetch(`https://www.omdbapi.com/?apikey=d5e9a71c&s=${title}`)
     const data = await users.json()
     movieList.innerHTML = data.Search.map((movie) => userHTML(movie)).join("") 
     result(title)
